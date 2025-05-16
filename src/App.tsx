@@ -1,4 +1,3 @@
-import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Pages
@@ -10,7 +9,7 @@ import AskPage from './pages/AskPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/age-groups" element={<AgeGroupsPage />} />
