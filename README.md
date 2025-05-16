@@ -101,6 +101,18 @@ export const fetchLatestResearch = async (query?: string): Promise<ResearchItem[
 - Perplexity Sonar API
 - Zod for API response validation
 
+## GitHub Pages Deployment
+
+This project is configured for deployment to GitHub Pages. Here's how to deploy it:
+
+1. Fork or clone this repository to your GitHub account
+2. Update the `homepage` field in `package.json` with your GitHub username
+3. Push your changes to the `main` branch
+4. GitHub Actions will automatically build and deploy the site
+5. Your site will be available at `https://[your-username].github.io/eyecare-insights/`
+
+The deployment is handled by the GitHub Actions workflow in `.github/workflows/deploy.yml`. The site uses HashRouter for proper routing on GitHub Pages.
+
 ## API Response Validation
 
 The application uses Zod schemas to validate API responses:
